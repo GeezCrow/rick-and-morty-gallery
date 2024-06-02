@@ -2,6 +2,8 @@
 
 import CharacterSheet from './components/CharacterSheet';
 import CharacterGrid from './components/CharacterGrid';
+import './App.css';
+
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -18,16 +20,15 @@ function App() {
             image: char.image
           };
         });
+
         setCharacters(characterData);
       })
       .catch(error => console.error('Error al obtener los datos:', error));
   }, []);
 
   return (
-    <div>
-      {characters.map((char, index) => (
-        <CharacterSheet key={index} image={char.image} name={char.name} />
-      ))}
+    <div className='App'>
+        <CharacterGrid characters={characters}/>
     </div>
   );
 }
