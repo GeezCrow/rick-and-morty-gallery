@@ -32,7 +32,7 @@ function App() {
       .catch(error => console.error('Error al obtener los datos:', error));
   }, [currentPage]);
 
-  const previousPage = () => {
+  const prevPage = () => {
     setCurrentPage(prevPage=>Math.max(prevPage -1,1))
   }
 
@@ -44,9 +44,14 @@ function App() {
     <div className='App'> 
     
     <div>
-
-       <button className='move-button' onClick={previousPage}>Prev Page</button>
-       <button className='move-button' onClick={nextPage}>Next Page</button> 
+      <input
+      className='search-character'
+      type='text'
+      placeholder='description'
+      name='text'
+      ></input>
+      <button className='move-button' onClick={prevPage}>Prev Page</button>
+      <button className='move-button' onClick={nextPage}>Next Page</button> 
       
     </div>
 
