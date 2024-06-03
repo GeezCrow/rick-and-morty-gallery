@@ -5,7 +5,7 @@
   
   html,body {
     font-size: 18px;
-    background-color: bisque;
+    background-color: #ffe4c4;
   }
   
   h1 {
@@ -15,5 +15,9 @@
     font-weight: 700;
     line-height: 1.1;
     margin: 40px 0;
+  }
+
+  button{
+    font-size: 30px;
   }
   

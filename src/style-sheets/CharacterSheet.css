@@ -2,7 +2,7 @@
 .character-sheet {
   width: 200px;
   border-radius: 10px;
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
   overflow: hidden;
   text-align: center;
   margin: 16px;
@@ -19,4 +19,25 @@
   font-family: sans-serif;
   color: #333;
   margin: 8px 0;
+}
+
+.character-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  gap: 16px;
+  padding: 16px;
+  
+}
+
+.move-button{
+  padding: 40px;
+  margin: 20px;
+  font-size: 50;
+  font-family: sans-serif;
+  border: none;
+  border-radius:  15px;
+  outline: none;
+  background: #45ca78;
+  color: aliceblue;
+  text-transform: capitalize;
 }

@@ -1,6 +1,5 @@
 import React from 'react'
-import '../style-sheets/CharacterSheet.css';
-
+import '../style-sheets/CharacterSheet.css'
 
 
 /*
@@ -10,7 +9,6 @@ import '../style-sheets/CharacterSheet.css';
 ))}
 </div>
 */
-
 function CharacterSheet({ image, name, ...props}) {
 
 
@@ -22,5 +20,6 @@ function CharacterSheet({ image, name, ...props}) {
     </div>
   );
 }
+
 
 export default CharacterSheet;
